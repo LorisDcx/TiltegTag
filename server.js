@@ -4,7 +4,7 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
 // Configuration du serveur
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 
 const players = {};
 let eliminationOrder = []; // [{id, pseudo}]
